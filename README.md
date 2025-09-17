@@ -659,13 +659,13 @@ Success Response (200):
 
 Error Response (400/403/404):
 
-json
+```json
 {
     "timestamp": "2024-01-01T10:00:00.000+00:00",
     "message": "Access denied",
     "details": "uri=/api/reservations/1"
 }
-
+```
 
 Pagination Response:
 
