@@ -1,5 +1,24 @@
+# Booking System — MultiGenesys Assignment
+Spring Boot 3 + Java 17 booking system with JWT auth and RBAC.
 
-BookingBackendPortal 
+## Features
+- Resources: CRUD for ADMIN; read-only for USER
+- Reservations: create, read, update, delete; filtering (status, minPrice, maxPrice), pagination, sorting
+- JWT-based stateless authentication
+- Roles: ADMIN, USER
+- Seed users included (admin/admin123, user/user123)
+
+## Tech
+- Java 17, Spring Boot 3.x, Spring Security, Spring Data JPA
+- MySQL as RDBMS
+- Maven
+
+## Prerequisites
+- Java 17+
+- Maven
+- MySQL running
+
+#BookingBackendPortal 
 
 Project Purpose 
 BookingBackendPortal is a robust backend service to manage user 
