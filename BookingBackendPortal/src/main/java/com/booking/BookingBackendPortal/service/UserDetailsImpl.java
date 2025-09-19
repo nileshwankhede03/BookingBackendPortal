@@ -1,13 +1,14 @@
 package com.booking.BookingBackendPortal.service;
 
-import com.booking.BookingBackendPortal.entity.User;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.stream.Collectors;
+import com.booking.BookingBackendPortal.entity.User;
 
 public class UserDetailsImpl implements UserDetails {
     private Long id;
@@ -32,11 +33,8 @@ public class UserDetailsImpl implements UserDetails {
                 user.getId(),
                 user.getUsername(),
                 user.getPassword(),
-                authorities);
-    }
-
-    public Long getId() {
-        return id;
+                authorities
+        );
     }
 
     @Override
