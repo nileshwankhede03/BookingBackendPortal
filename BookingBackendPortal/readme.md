@@ -21,6 +21,6 @@ A RESTful booking system built with Spring Boot 3.2, JWT authentication, and Pos
 
 ### Database Setup
 
-1. Create a PostgreSQL database:
+1. Create a SQL database:
 ```sql
 CREATE DATABASE booking_db;
